@@ -26,7 +26,7 @@ type helloWorldRequest struct {
 func main() {
 	port := 8080
 	http.HandleFunc("/helloworld", helloworldHandler)
-	fmt.Printf("Port listening to %v\n", 8080)
+	fmt.Printf("Port listening to %v\n", port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%v", port), nil))
 }
 
